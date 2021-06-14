@@ -21,3 +21,18 @@ for (var k in student){
 
 document.getElementById('student').innerHTML = studentCarachter
 
+//3) Creo un' array di oggetti di studenti.
+var students = [
+    student,
+    {
+        nome : 'luca',
+        cognome : 'bianchi',
+        eta : 24
+    },
+    {
+        nome : 'maria',
+        cognome : 'gialli',
+        eta : 23
+    }
+];
+
