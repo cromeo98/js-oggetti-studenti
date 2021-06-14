@@ -5,3 +5,19 @@
 // Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
 
+//1) Creo un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
+var student = {
+    nome : 'mario',
+    cognome : 'rossi',
+    eta : 25
+}
+
+//2) Stampo A SCHERMO attraverso un ciclo for-in tutte le proprietà dell'oggetto.
+var studentCarachter = '';
+
+for (var k in student){
+    studentCarachter += student[k] + ' ';
+}
+
+document.getElementById('student').innerHTML = studentCarachter
+
