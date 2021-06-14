@@ -19,7 +19,7 @@ for (var k in student){
     studentCarachter += student[k] + ' ';
 }
 
-document.getElementById('student').innerHTML = studentCarachter
+document.getElementById('student').innerHTML = studentCarachter;
 
 //3) Creo un' array di oggetti di studenti.
 var students = [
@@ -49,3 +49,18 @@ for (var i = 0; i < students.length; i++){
     }
 }
 
+//5) Do la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
+
+var userName = prompt('inserisci il nome');
+var userLastName = prompt('inserisci il tuo cognome');
+var userAge = parseInt(prompt('inserisci l\'età'));
+
+var user = {
+    nome : userName,
+    cognome : userLastName,
+    eta : userAge
+}
+
+students.push(user);
+
+console.log(students);
