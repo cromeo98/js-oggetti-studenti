@@ -36,3 +36,16 @@ var students = [
     }
 ];
 
+//4) Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+var studentNameLast = '';
+
+for (var i = 0; i < students.length; i++){
+    for (var k in students[i]){
+
+        if(k != 'eta'){
+            studentNameLast += students[i][k] + ' ';
+        }
+        document.getElementById('name-lastname').innerHTML = studentNameLast;
+    }
+}
+
